@@ -1,0 +1,218 @@
+html, body{
+    margin: 0px;
+    padding: 0px;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: rgba(195, 180, 208);
+}
+
+/*NavBar-------------------------------------------------------------------------*/
+ul.navbar {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    background-color: #333;
+    overflow: hidden;
+    text-align: left; /* Align the nav items to the left */
+}
+
+ul.navbar li {
+    display: inline-block; 
+    text-align: center; /* Center the links inside each list item */
+    flex: 1; /* Make each nav item take equal space */
+}
+
+ul.navbar li a {
+    display: block;
+    padding: 14px 20px;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+}
+
+ul.navbar li a:hover {
+    background-color: #111;
+}
+
+/* Style for the social media icons */
+.socials {
+    display: inline-block;
+    margin-left: 15px;
+}
+
+.socials img {
+    width: 30px; /* Adjust size of the icons */
+    height: auto;
+    vertical-align: middle;
+}
+
+/* Align socials to the right */
+.navbar-right {
+    float: right;
+    padding-right: 20px; /* Adjust the right padding */
+}
+.nav-text{
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+
+
+/* Add image background and navigation bar*/
+.bg-img {
+    background-image: url("homepage.jpg");
+    width: 100%;
+    
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+}
+
+.container {
+    display: flex;
+    height: 100vh;
+}
+
+.containerleft, .containerright{
+    display: inline-block;
+    vertical-align: top;
+    text-align: center;
+    position: absolute;
+    
+}
+.containerleft{
+    width:50%;
+    height: auto;
+    margin-top: 20px;   
+}
+
+.containerright{
+    width:95%;
+    margin: 35px;   
+    
+}
+
+.topnav{
+    margin-right: 70px;
+}
+
+.topnav a, .Logo a{  
+    color: #f2f2f2;
+    text-align: center;
+    padding: 0px 7px;
+    text-decoration: none;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
+
+.top-left a{
+    width: 150px;
+    height: 150px;
+}
+
+.topnav a {
+    float: right;
+    font-size: 20px; 
+    font-family: Tahoma, Arial, Helvetica, sans-serif;  
+}
+
+.Logo a{
+    float:left;
+    font-size: 26px;
+    margin-left: 0px;
+    margin-top:15px;
+}
+
+.topnav a:hover {
+    text-decoration: underline;
+    text-decoration-color: blueviolet;
+}
+.socialContainer{
+    float: right;
+    padding: 20px 7px 0px 7px;
+}
+.socialContainer img{
+    display: block;
+    height: auto;
+    
+}
+.socials{
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+/* The index center text */
+
+.center-message{
+    color: white;
+    text-align: center;
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, -17%);
+    width: 100%;
+    top: 30%;
+    
+    font-family: Tahoma, Arial, Helvetica, sans-serif;
+}
+
+
+/*footer-------------------------------------------------------------------------*/
+footer{
+    text-align: center;
+    font-size: 17px;
+    padding: 30px;
+    background-color: rgb(53, 12, 88);
+    font-family: 'Courier New', Courier, monospace;
+}
+footer p{
+    color: white;
+}
+footer a{
+    color: rgb(198,159,197);
+}
+footer .projectIF img{
+    height: 100px;
+    width:auto;
+    text-align: center;
+}
+
+
+/*mobile scaling-------------------------------------------------------------------------*/
+@media (min-width: 480px) {
+    .bg-img {
+        height: 66.67vh;
+    }
+    .center-message{
+        font-size: 10vh;
+    }
+    .socialContainer img{
+        width: 35px;
+    }
+    .Logo img{
+        width: 100px;
+        height: auto;
+        float: left;
+        margin-left: 40px;
+        margin-top: -10px;
+    }
+}
+@media (max-width: 479px) {
+    .bg-img {
+        height: 33.33vh;
+    }
+    .center-message{
+        font-size: 5vh;
+        margin-top: 10px;
+    }
+    .socialContainer img{
+        width: 15px;
+    }
+    .Logo img{
+        width: 35px;
+        height: auto;
+        float: left;
+        margin-left: 10px;
+        margin-top: -20px;
+    }
+}
