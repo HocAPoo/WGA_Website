@@ -1,0 +1,21 @@
+.community-banner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px var(--section-pad-x);
+  background: #4E5886;
+  gap: 16px;
+  flex-wrap: wrap;
+}
+.community-banner__text {
+  font-size: 0.95rem;
+  font-weight: 700;
+  color: #fff;
+}
+.community-banner__socials { display: flex; gap: 10px; }
+.community-banner .social-icon { background: #1A2130; }
+.community-banner .social-icon:hover { background: #2e3650; }
+
+@media (max-width: 600px) {
+  .community-banner { justify-content: center; text-align: center; }
+}

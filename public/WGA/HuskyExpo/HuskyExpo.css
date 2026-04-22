@@ -1,0 +1,175 @@
+/* Body1------------------------------------------------------------------------- */
+
+.containerBody1, .containerBody2, .containerBody3, .containerBody4, .containerBody5{
+    display: grid;
+    width: 70%;
+    margin-left: 15%;
+    margin-right: 15%;
+    margin-bottom: 5%;
+    margin-top: 5%;
+}
+
+.containerBody1, .containerBody3, .containerBody5{
+    grid-template-columns: 40% 60%; 
+}
+
+.containerBody2, .containerBody4 {
+    grid-template-columns: 60% 40%; 
+}
+
+.column1, .column2, .column3, .column4 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box;
+    text-align: center; 
+}
+
+.column1, .column3 {
+    border-bottom-left-radius: 50px;
+    border-top-left-radius: 50px;
+    padding: 10%;
+}
+
+.column2 {
+    border-bottom-right-radius: 50px;
+    border-top-right-radius: 50px;
+    padding: 7.5%;
+}
+.column4 {
+    border-bottom-right-radius: 50px;
+    border-top-right-radius: 50px;
+    padding-top: 7.5%;
+    padding-right: 7.5%;
+    padding-left: 7.5%;
+}
+
+.column1 {
+    background-color: rgb(173, 112, 227);
+}
+
+.column2 {
+    background-color: rgb(53, 12, 88);
+}
+
+.column3 {
+    background-color: rgb(53, 12, 88);
+}
+
+.column4 {
+    background-color: rgb(173, 112, 227);
+}
+
+.body1 p {
+    font-family: "Times New Roman", Times, serif;
+    font-weight: 500;
+}
+
+.body1 strong {
+    font-weight: 550;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.body1 img {
+    width: 80%; 
+    height: auto; 
+    max-height: 50vh; 
+    object-fit: contain; 
+}
+
+
+/* Gallery */
+.gallery-container {
+    position: relative;
+    width: 100%;  /* Adjust the width of the gallery to be responsive */
+    max-width: 80%; /* Limit the width to 80% of the container */
+    margin: 0 auto; /* Center the gallery */
+    overflow: hidden;
+}
+
+.image-gallery {
+    display: flex;
+    transition: transform 0.5s ease;
+}
+
+.image-gallery img {
+    width: 100%;  /* Make images responsive */
+    height: auto; /* Maintain aspect ratio */
+    max-width: 100%; /* Ensure image width doesn't exceed container */
+    object-fit: contain; /* Scale image to fit container */
+    margin-right: 10px; /* Space between images */
+}
+
+/* Scroll buttons */
+.scroll-btn {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    font-size: 24px;
+    padding: 10px;
+    cursor: pointer;
+    z-index: 10;
+}
+
+.scroll-btn.left {
+    left: 0;
+}
+
+.scroll-btn.right {
+    right: 0;
+}
+
+/* Cosplay Sign-up */
+.button {
+    display: inline-block;
+    cursor: pointer;
+    text-align: center;
+    text-decoration: none;
+    outline: none;
+    color: #000000;
+    background-color: #ffffff;
+    border: none;
+    border-radius: 20px;   
+}
+.button:hover{
+    background-color: #000000;
+    color:#ffffff
+}
+
+@media (min-width: 480px) {
+    .containerBody1, .containerBody2, .containerBody3, .containerBody4, .containerBody5{
+        width: 70%;
+        margin-left: 15%;
+        margin-right: 15%;
+    }
+    .button {
+        padding: 2vh 3vh;
+        font-size: 2.5vh;
+    }
+    .body1 p {
+        font-size: 1.3vw;
+    }
+    .body1 strong {
+        font-size: 2.3vw;
+    }
+}
+@media (max-width: 479px) {
+    .containerBody1, .containerBody2, .containerBody3, .containerBody4, .containerBody5{
+        width: 90%;
+        margin-left: 5%;
+        margin-right: 5%;
+    }
+    .button {
+        padding: 0.5vh 1vh;
+        font-size: 1.2vh;
+    }
+    .body1 p {
+        font-size: 1.3vh;
+    }
+    .body1 strong {
+        font-size: 2.3vh;
+    }
+}

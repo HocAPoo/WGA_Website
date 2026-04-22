@@ -1,0 +1,19 @@
+.page-hero {
+  position: relative;
+  min-height: 220px;
+  background-position: center top;
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: flex;
+  align-items: flex-end;
+  padding: var(--section-pad-y) var(--section-pad-x);
+  overflow: hidden;
+}
+.page-hero__title {
+  position: relative;
+  z-index: 1;
+  color: #fff;
+  font-size: clamp(2.5rem, 6vw, 5rem);
+  font-weight: 700;
+  line-height: 1.1;
+}

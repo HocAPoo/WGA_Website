@@ -1,0 +1,31 @@
+.carousel { display: flex; align-items: center; gap: 8px; }
+.carousel__window { flex: 1; overflow: hidden; border-radius: 8px; }
+.carousel__track { display: flex; transition: transform 0.5s ease; }
+.carousel__img {
+  flex: 0 0 100%;
+  width: 100%;
+  height: 320px;
+  object-fit: cover;
+  display: block;
+}
+.carousel__btn {
+  flex-shrink: 0;
+  width: 38px;
+  height: 38px;
+  border-radius: 50%;
+  border: none;
+  background: rgba(0,0,0,0.4);
+  color: #fff;
+  font-size: 1rem;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background 0.2s;
+}
+.carousel__btn:hover:not(:disabled) { background: rgba(0,0,0,0.7); }
+.carousel__btn:disabled { opacity: 0.3; cursor: default; }
+
+@media (max-width: 768px) {
+  .carousel__img { height: 240px; }
+}

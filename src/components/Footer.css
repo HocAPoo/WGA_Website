@@ -1,0 +1,18 @@
+.footer {
+  background: #1A1A2E;
+  text-align: center;
+  padding: 36px 24px;
+  font-family: 'Courier New', Courier, monospace;
+}
+.footer__logo img {
+  height: 80px;
+  width: auto;
+  margin: 0 auto 16px;
+}
+.footer__text {
+  color: #fff;
+  font-size: 0.875rem;
+  line-height: 1.7;
+}
+.footer__text a { color: #C69FC5; }
+.footer__text a:hover { text-decoration: underline; }

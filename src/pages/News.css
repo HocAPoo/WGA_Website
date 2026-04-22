@@ -1,0 +1,17 @@
+.news-grid-section { background: #FFEBF3; }
+.news-grid-section__inner {
+  max-width: 1920px;
+  margin: 0 auto;
+  padding: var(--section-pad-y) var(--section-pad-x);
+}
+.news-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+}
+@media (max-width: 1000px) {
+  .news-grid { grid-template-columns: repeat(2, 1fr); }
+}
+@media (max-width: 600px) {
+  .news-grid { grid-template-columns: 1fr; }
+}

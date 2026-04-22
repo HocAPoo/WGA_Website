@@ -1,4 +1,5 @@
 /* Body1------------------------------------------------------------------------- */
+
 .containerBody1, .containerBody2, .containerBody3, .containerBody4, .containerBody5{
     display: grid;
     width: 70%;
