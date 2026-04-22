@@ -5,5 +5,5 @@ import react from '@vitejs/plugin-react'
 // For root deployment (custom domain): keep './'
 export default defineConfig({
   plugins: [react()],
-  base: '/WGA_Website/',
+  base: '/',
 })
