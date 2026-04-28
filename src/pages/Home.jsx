@@ -60,8 +60,8 @@ export default function Home() {
             <p>Witness Our Rise!</p>
           </div>
           <div className="home-hero__buttons">
-            <Link to="/huskyexpo" className="btn btn--primary">Join the Expo</Link>
-            <Link to="/events" className="btn btn--secondary">See more events →</Link>
+            <Link to="https://forms.gle/CXyuJJNf4PyWFXbL8" target="blank" className="btn btn--primary">Join the Expo</Link>
+            <Link to="/huskyexpo" className="btn btn--secondary">Learn More</Link>
           </div>
         </div>
       </section>
@@ -91,8 +91,8 @@ export default function Home() {
             hosted at the University of Washington by the Gaming Association at UW.
           </p>
           <div className="home-husky__buttons">
-            <Link to="/huskyexpo" className="btn btn--primary">Join the Expo</Link>
-            <Link to="/huskyexpo" className="btn btn--secondary">Learn More →</Link>
+            <Link to="https://forms.gle/CXyuJJNf4PyWFXbL8" target="blank" className="btn btn--primary">Join the Expo</Link>
+            <Link to="https://forms.gle/j65ZXPcy5rUfeY259" target="blank"className="btn btn--secondary">Give Us Feedback</Link>
           </div>
         </FadeIn>
         <FadeIn as="div" className="home-husky__right">
@@ -104,7 +104,7 @@ export default function Home() {
       <section className="home-schedule" style={{ backgroundImage: `url('${BASE}WGA/base/schedule-bg.png')` }}>
         <FadeIn as="div" className="home-schedule__inner">
           <h2>HuskyX Schedule</h2>
-          <img src="./WGA/base/Schedule.png" alt="HuskyX Schedule" />
+          <img src="./WGA/base/Schedule-2.png" alt="HuskyX Schedule" />
         </FadeIn>
       </section>
 

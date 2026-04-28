@@ -41,7 +41,10 @@ export default function HuskyExpo() {
             Husky Expo (or HuskyX) is an annual celebration of gaming and pop culture
             hosted at the University of Washington by the Gaming Association at UW.
           </p>
-          <Link to="#" className="btn btn--primary">Join the Expo</Link>
+          <div className="home-husky__buttons">
+            <Link to="https://forms.gle/CXyuJJNf4PyWFXbL8" target="blank" className="btn btn--primary">Join the Expo</Link>
+            <Link to="https://forms.gle/j65ZXPcy5rUfeY259" target="blank" className="btn btn--secondary">Give Us Feedback</Link>
+          </div>
         </div>
         <div className="hx-hero__right">
           <img src={`${BASE}WGA/HuskyExpo/About/huskyx-hero.JPG`} alt="Husky Expo Team" />
@@ -52,7 +55,7 @@ export default function HuskyExpo() {
       <section className="hx-schedule" style={{ backgroundImage: `url('${BASE}WGA/base/schedule-bg.png')` }}>
         <FadeIn as="div" className="hx-schedule__inner">
           <h2>HuskyX Schedule</h2>
-          <img src="./WGA/base/Schedule.png" alt="HuskyX Schedule" />
+          <img src="./WGA/base/Schedule-2.png" alt="HuskyX Schedule" />
         </FadeIn>
       </section>
 
