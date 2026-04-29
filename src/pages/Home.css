@@ -154,6 +154,7 @@
   margin-bottom: 32px;
 }
 .home-schedule__inner img {
+  width: auto;
   max-width: 100%;
   border-radius: 8px;
   margin: 0 auto;
