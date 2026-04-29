@@ -55,7 +55,7 @@ export default function HuskyExpo() {
       <section className="hx-schedule" style={{ backgroundImage: `url('${BASE}WGA/base/schedule-bg.png')` }}>
         <FadeIn as="div" className="hx-schedule__inner">
           <h2>HuskyX Schedule</h2>
-          <img src="./WGA/base/Schedule-2.png" alt="HuskyX Schedule" />
+          <img src="./WGA/base/Schedule-3.png" alt="HuskyX Schedule" />
         </FadeIn>
       </section>
 
