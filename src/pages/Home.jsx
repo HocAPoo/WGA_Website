@@ -105,7 +105,7 @@ export default function Home() {
       <section className="home-schedule" style={{ backgroundImage: `url('${BASE}WGA/base/schedule-bg.png')` }}>
         <FadeIn as="div" className="home-schedule__inner">
           <h2>HuskyX Schedule</h2>
-          <img src="./WGA/base/Schedule-2.png" alt="HuskyX Schedule" />
+          <img src="./WGA/base/Schedule-4.png" alt="HuskyX Schedule" />
         </FadeIn>
       </section>
 
