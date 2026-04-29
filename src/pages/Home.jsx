@@ -44,6 +44,7 @@ const SPONSORS = [
   { name: 'Lanfest',                img: './WGA/HX_Homepage/sponsors-2026/lanfest.png'                 },
   { name: 'Pepsi',                  img: './WGA/HX_Homepage/sponsors-2026/pepsi.png'                   },
   { name: 'WGA',                    img: './WGA/HX_Homepage/sponsors-2026/wga.png'                     },
+  { name: 'Sony',                   img: './WGA/HX_Homepage/sponsors-2026/sony.png'                    }
 ]
 
 export default function Home() {

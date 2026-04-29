@@ -10,6 +10,13 @@ const POKESWAP_IMAGES = [
   './WGA/Pokeswap/pokeswap3.png',
 ]
 
+const GAMING_IMAGES = [
+  './WGA/Gaming_Tournament/image 1.jpg',
+  './WGA/Gaming_Tournament/IMG_1510.JPG',
+  './WGA/Gaming_Tournament/IMG_1524.JPG',
+  './WGA/Gaming_Tournament/IMG_1703.JPG',
+]
+
 const EVENTS = [
   {
     id: 1,
@@ -31,7 +38,7 @@ const EVENTS = [
       'Catch the action in thrilling tournaments and be the first to try exciting new games. ' +
       'Whether you\'re watching the competition or discovering your next favorite game, ' +
       'there\'s something for every gamer!',
-    image: './WGA/HuskyExpo/GamingTournaments/image 1.jpg',
+    images: GAMING_IMAGES,
     imageLeft: false,
   },
   {
