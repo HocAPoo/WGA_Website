@@ -1,0 +1,300 @@
+/* Team page styles */
+.team-hero{
+  background: var(--bg);
+  padding: 60px 0 40px;
+}
+.th-grid{
+  display: grid; grid-template-columns: 1.3fr 1fr;
+  gap: 56px; align-items: center;
+}
+.th-h{
+  font-size: clamp(80px, 11vw, 180px);
+  line-height: .86; margin: 12px 0 0;
+  letter-spacing: -.02em;
+}
+.th-h .stroke{ -webkit-text-stroke: 2px var(--ink); color: transparent; }
+.th-art{ position: relative; }
+.th-photo{
+  min-height: 460px;
+  border-radius: 16px;
+  background:
+    repeating-linear-gradient(45deg, rgba(17,17,24,.06) 0 8px, rgba(17,17,24,.02) 8px 16px),
+    var(--accent-3);
+  transform: rotate(-2deg);
+  box-shadow: 8px 8px 0 var(--ink);
+}
+.th-stamp{
+  position: absolute; right: -10px; top: -16px;
+  background: var(--ink); color: var(--bg);
+  padding: 16px 22px;
+  border-radius: 14px;
+  border: 2.5px solid var(--bg);
+  outline: 2.5px solid var(--ink);
+  text-align: center;
+  transform: rotate(6deg);
+  z-index: 2;
+}
+.th-stamp .display{ line-height: .9; }
+
+/* Roster grid */
+.team-grid{
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+}
+.member-card{
+  background: var(--bg-2);
+  padding: 18px;
+  box-shadow: 5px 5px 0 var(--ink);
+  transition: transform .2s ease, box-shadow .2s ease;
+  display: flex; flex-direction: column; gap: 12px;
+}
+.member-card:hover{
+  transform: translate(-3px,-3px);
+  box-shadow: 9px 9px 0 var(--ink);
+}
+.mem-avatar{ position: relative; }
+.mem-ph{
+  min-height: 200px;
+  background-color: var(--c);
+  border-radius: 10px;
+  background:
+    repeating-linear-gradient(45deg, rgba(255,255,255,.1) 0 8px, rgba(255,255,255,.02) 8px 16px),
+    var(--c);
+  color: var(--bg);
+}
+.mem-ph span{ background: var(--bg); color: var(--ink); }
+.mem-badge{
+  position: absolute; top: 8px; right: 8px;
+  background: var(--ink); color: var(--bg);
+  padding: 4px 8px;
+  font-size: 10px;
+  border-radius: 4px;
+  letter-spacing: .14em;
+}
+.mem-role{ font-size: 10px; letter-spacing: .14em; text-transform: uppercase; opacity: .65; }
+.mem-name{ font-size: 22px; line-height: 1; margin: 4px 0 6px; }
+.mem-desc{ font-size: 13px; color: var(--ink-2); margin: 0; line-height: 1.45; }
+
+/* Values */
+.team-values{ background: var(--bg-2); }
+.values-grid{
+  display: grid; grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+}
+.value-card{
+  background: var(--bg);
+  padding: 28px;
+  box-shadow: 6px 6px 0 var(--ink);
+  display: flex; flex-direction: column; gap: 8px;
+}
+.val-n{ font-size: 36px; color: var(--accent); -webkit-text-stroke: 2px var(--ink); line-height: 1; letter-spacing: 0; }
+.val-t{ font-size: 28px; line-height: 1; margin: 6px 0; }
+
+/* Join section */
+.team-join{
+  background: var(--ink); color: var(--bg);
+  padding: 100px 0;
+  position: relative;
+  overflow: hidden;
+}
+.team-join::before{
+  content: ""; position: absolute; inset: 0;
+  background-image:
+    radial-gradient(rgba(255,210,63,.12) 1.5px, transparent 2px);
+  background-size: 22px 22px;
+  pointer-events: none;
+}
+.tj-grid{
+  display: grid; grid-template-columns: 1fr 1.2fr;
+  gap: 56px; align-items: start;
+  position: relative; z-index: 1;
+}
+.tj-side{ padding-top: 12px; }
+.tj-perks{ margin-top: 32px; display: grid; gap: 16px; }
+.tj-perk{
+  display: flex; align-items: center; gap: 14px;
+  padding: 14px;
+  background: rgba(255,255,255,.05);
+  border: 1.5px dashed rgba(255,255,255,.2);
+  border-radius: 10px;
+  font-size: 14px;
+}
+
+.join-form{
+  background: var(--bg);
+  color: var(--ink);
+  padding: 32px;
+  box-shadow: 8px 8px 0 var(--accent);
+}
+.role-grid{
+  display: grid; grid-template-columns: repeat(3, 1fr);
+  gap: 6px; margin-top: 6px;
+}
+.role-grid .cat-btn{ font-size: 10px; padding: 10px 6px; }
+
+.time-slider{
+  width: 100%;
+  -webkit-appearance: none; appearance: none;
+  height: 6px;
+  background: var(--ink);
+  border-radius: 3px;
+  margin-top: 8px;
+  outline: none;
+}
+.time-slider::-webkit-slider-thumb{
+  -webkit-appearance: none; appearance: none;
+  width: 22px; height: 22px;
+  background: var(--accent);
+  border: 2.5px solid var(--ink);
+  border-radius: 50%;
+  cursor: pointer;
+  box-shadow: 2px 2px 0 var(--ink);
+}
+.time-slider::-moz-range-thumb{
+  width: 22px; height: 22px;
+  background: var(--accent);
+  border: 2.5px solid var(--ink);
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+/* Alumni */
+.team-alumni{ background: var(--bg); padding: 60px 0; }
+.alumni-shell{
+  padding: 36px;
+  background: var(--bg-2);
+  box-shadow: 8px 8px 0 var(--ink);
+}
+.alumni-head{
+  display: grid;
+  grid-template-columns: 1fr auto;
+  gap: 24px;
+  align-items: end;
+  padding-bottom: 24px;
+  margin-bottom: 24px;
+  border-bottom: 2px dashed var(--ink);
+}
+.alumni-h{
+  font-size: clamp(40px, 5vw, 64px);
+  line-height: .95;
+  margin: 8px 0 0;
+}
+.alumni-p{
+  margin: 10px 0 0;
+  color: var(--ink-2);
+  font-size: 14px;
+  max-width: 420px;
+}
+.alumni-picker{
+  display: grid; gap: 6px;
+  min-width: 240px;
+}
+.alumni-picker .mono{
+  font-size: 11px; letter-spacing: .14em; text-transform: uppercase;
+}
+.alumni-select{
+  font-family: var(--mono);
+  font-size: 14px;
+  font-weight: 700;
+  padding: 14px 16px;
+  background: var(--ink);
+  color: var(--bg);
+  border-color: var(--ink);
+  box-shadow: 4px 4px 0 var(--accent);
+  cursor: pointer;
+}
+.alumni-select:focus{
+  outline: none;
+  box-shadow: 6px 6px 0 var(--accent);
+}
+
+.alumni-body{
+  display: grid;
+  grid-template-columns: 1fr 1.6fr;
+  gap: 36px;
+  align-items: start;
+}
+.alumni-meta{
+  background: var(--bg);
+  border: 2px solid var(--ink);
+  border-radius: 12px;
+  padding: 0;
+  overflow: hidden;
+  display: flex; flex-direction: column;
+}
+.alumni-photo{
+  min-height: 240px;
+  border-radius: 0;
+  border: 0;
+  border-bottom: 2px solid var(--ink);
+  background:
+    repeating-linear-gradient(45deg, rgba(17,17,24,.08) 0 8px, rgba(17,17,24,.02) 8px 16px),
+    var(--accent-3);
+}
+.alumni-photo::after{ inset: 14px; }
+.alumni-photo-info{
+  padding: 20px 22px;
+  display: flex; flex-direction: column; gap: 10px;
+}
+.alumni-year{
+  font-size: clamp(48px, 6vw, 80px);
+  line-height: .9;
+  letter-spacing: -.01em;
+  color: var(--accent);
+  -webkit-text-stroke: 2px var(--ink);
+}
+.alumni-meta .sticker{ align-self: flex-start; }
+.alumni-note{ font-size: 13px; margin: 6px 0 0; color: var(--ink-2); }
+
+.alumni-list{
+  list-style: none; padding: 0; margin: 0;
+  display: grid; gap: 6px;
+}
+.alumni-row{
+  display: grid;
+  grid-template-columns: 36px 160px 1fr;
+  gap: 16px;
+  align-items: baseline;
+  padding: 12px 14px;
+  background: var(--bg);
+  border: 1.5px solid var(--ink);
+  border-radius: 8px;
+  transition: background .15s ease, transform .15s ease;
+}
+.alumni-row:hover{ background: var(--bg-2); transform: translateX(3px); }
+.alumni-n{
+  font-size: 14px; font-weight: 700; opacity: .5;
+}
+.alumni-role{
+  font-size: 11px;
+  letter-spacing: .14em;
+  text-transform: uppercase;
+  opacity: .8;
+}
+.alumni-name{
+  font-size: 22px;
+  line-height: 1;
+  letter-spacing: -.01em;
+}
+
+@media (max-width: 900px){
+  .alumni-head{ grid-template-columns: 1fr; }
+  .alumni-body{ grid-template-columns: 1fr; }
+  .alumni-row{ grid-template-columns: 28px 120px 1fr; gap: 10px; }
+}
+
+@media (max-width: 1100px){
+  .team-grid{ grid-template-columns: 1fr 1fr; }
+  .values-grid{ grid-template-columns: 1fr 1fr; }
+  .tj-grid, .th-grid{ grid-template-columns: 1fr; }
+  .role-grid{ grid-template-columns: 1fr 1fr; }
+}
+@media (max-width: 600px){
+  .team-grid{ grid-template-columns: 1fr; }
+  .values-grid{ grid-template-columns: 1fr; }
+}
+@media (max-width: 600px){
+  .team-grid{ grid-template-columns: 1fr; }
+  .values-grid{ grid-template-columns: 1fr; }
+}

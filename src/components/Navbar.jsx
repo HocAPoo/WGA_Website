@@ -5,9 +5,10 @@ import './Navbar.css'
 const NAV_LINKS = [
   { to: '/',          label: 'Home'    },
   { to: '/huskyexpo', label: 'HuskyX'  },
-  // { to: '/news',      label: 'News'    },  // hidden, reserved for future version
   { to: '/events',    label: 'Events'  },
+  { to: '/gallery',   label: 'Gallery' },
   { to: '/team',      label: 'Team'    },
+  { to: '/join',      label: 'Join Us' },
 ]
 
 const SOCIALS = [
@@ -21,10 +22,8 @@ export default function Navbar() {
   const [open, setOpen] = useState(false)
   const location = useLocation()
 
-  // Close on route change
   useEffect(() => { setOpen(false) }, [location])
 
-  // Lock body scroll while menu is open
   useEffect(() => {
     document.body.style.overflow = open ? 'hidden' : ''
     return () => { document.body.style.overflow = '' }
@@ -33,10 +32,11 @@ export default function Navbar() {
   return (
     <>
       <header className="navbar">
-        <div className="navbar__left">
-          <Link to="/" className="navbar__logo-link">
-            <img src="./WGA/base/Logo.png" alt="WGA Logo" className="navbar__logo" />
+        <div className="navbar-inner">
+          <Link to="/" className="navbar__logo-link" aria-label="WGA home">
+            <img src="./WGA/base/Logo.png" alt="WGA Logo" className="navbar__logo-img" />
           </Link>
+
           <nav className="navbar__links" aria-label="Main navigation">
             {NAV_LINKS.map(({ to, label }) => (
               <Link
@@ -48,58 +48,75 @@ export default function Navbar() {
               </Link>
             ))}
           </nav>
-        </div>
 
-        <div className="navbar__right">
-          <span className="navbar__community-text">Join our Community!</span>
-          <div className="navbar__socials">
-            {SOCIALS.map(s => (
-              <a key={s.alt} href={s.href} className="social-icon"
-                 target={s.href.startsWith('mailto') ? undefined : '_blank'}
-                 rel="noopener noreferrer" aria-label={s.alt}>
-                <img src={s.img} alt={s.alt} />
-              </a>
-            ))}
-          </div>
-        </div>
+          <a href="mailto:wgauw@uw.edu" className="btn navbar__cta">
+            <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true"><rect x="2" y="4" width="20" height="16" rx="2"/><polyline points="2,4 12,13 22,4"/></svg>
+            Get in touch
+          </a>
 
-        <button className="navbar__hamburger" onClick={() => setOpen(true)}
-          aria-label="Open navigation menu" aria-expanded={open}>
-          <span /><span /><span />
-        </button>
+          <button
+            className="navbar__hamburger"
+            onClick={() => setOpen(true)}
+            aria-label="Open navigation menu"
+            aria-expanded={open}
+          >
+            <span /><span /><span />
+          </button>
+        </div>
       </header>
 
-      {/* Overlay */}
       <div
         className={`mobile-overlay${open ? ' mobile-overlay--visible' : ''}`}
         onClick={() => setOpen(false)}
         aria-hidden="true"
       />
 
-      {/* Slide-in menu */}
-      <div className={`mobile-menu${open ? ' mobile-menu--open' : ''}`}
-           role="dialog" aria-label="Navigation menu" aria-modal="true">
-        <button className="mobile-menu__close" onClick={() => setOpen(false)}
-          aria-label="Close menu">✕</button>
+      <div
+        className={`mobile-menu${open ? ' mobile-menu--open' : ''}`}
+        role="dialog"
+        aria-label="Navigation menu"
+        aria-modal="true"
+      >
+        <button
+          className="mobile-menu__close"
+          onClick={() => setOpen(false)}
+          aria-label="Close menu"
+        >
+          ✕
+        </button>
 
         <nav className="mobile-menu__links" aria-label="Mobile navigation">
           {NAV_LINKS.map(({ to, label }) => (
-            <Link key={to} to={to}
-              className={`mobile-menu__link${location.pathname === to ? ' mobile-menu__link--active' : ''}`}>
+            <Link
+              key={to}
+              to={to}
+              className={`mobile-menu__link${location.pathname === to ? ' mobile-menu__link--active' : ''}`}
+            >
               {label}
             </Link>
           ))}
         </nav>
 
-        <p className="mobile-menu__community-text">Join our Community!</p>
+        <p className="mobile-menu__socials-label">Community</p>
         <div className="mobile-menu__socials">
           {SOCIALS.map(s => (
-            <a key={s.alt} href={s.href} className="social-icon"
-               target={s.href.startsWith('mailto') ? undefined : '_blank'}
-               rel="noopener noreferrer" aria-label={s.alt}>
+            <a
+              key={s.alt}
+              href={s.href}
+              className="social-icon"
+              target={s.href.startsWith('mailto') ? undefined : '_blank'}
+              rel="noopener noreferrer"
+              aria-label={s.alt}
+            >
               <img src={s.img} alt={s.alt} />
             </a>
           ))}
+        </div>
+
+        <div className="mobile-menu__cta" style={{ marginTop: 24 }}>
+          <Link to="/join" className="btn" style={{ width: '100%', justifyContent: 'center' }}>
+            Join WGA →
+          </Link>
         </div>
       </div>
     </>
