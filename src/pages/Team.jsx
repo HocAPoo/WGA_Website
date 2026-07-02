@@ -10,10 +10,13 @@ const ACCENT_COLORS = [
 ]
 
 const MEMBERS = [
-  { role: 'Club President',       name: 'Alexander Vuu', image: './WGA/HX_Team/Hoc.png'      },
+  { role: 'Club President',       name: 'Andy Hank', image: './WGA/HX_Team/andy.png'      },
+  { role: 'Vice President',   name: 'Viv "Kiyoshi"',     image: './WGA/HX_Team/no-pic.png'      },
   { role: 'Head of Strategic',    name: 'Jessica Low',   image: './WGA/HX_Team/jess.png'      },
   { role: 'Social Media Manager', name: 'Annelia Wong',  image: './WGA/HX_Team/AnnaWong.jpg'  },
-  { role: 'Talent Coordinator',   name: 'Andy Hank',     image: './WGA/HX_Team/andy.png'      },
+  { role: 'IT Manager',   name: 'Nathan Limono',     image: './WGA/HX_Team/no-pic.png'      },
+  { role: 'IT Manager/Program Manager',   name: 'Faiz',     image: './WGA/HX_Team/no-pic.png'      }
+
 ]
 
 const VALUES = [
@@ -55,7 +58,7 @@ export default function Team() {
 
             <FadeIn as="div" className="team-hero-art">
               <div className="team-hero-photo">
-                <img src="./WGA/HX_Team/Hoc.png" alt="WGA Team" />
+                <img src="./WGA/HuskyExpo/About/huskyx-hero.JPG" alt="WGA Team" />
               </div>
               <div className="team-hero-stamp">
                 <div className="mono" style={{ fontSize: 11, opacity: .7 }}>TEAM</div>

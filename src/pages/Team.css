@@ -43,7 +43,7 @@
 /* .team-hero-title .stroke — visual style handled by global .stroke */
 .team-hero-art { position: relative; }
 .team-hero-photo {
-  min-height: 440px;
+  aspect-ratio: 3 / 2;
   border-radius: 16px;
   background: var(--accent-3);
   transform: rotate(-2deg);
