@@ -11,7 +11,7 @@ const ACCENT_COLORS = [
 
 const MEMBERS = [
   { role: 'Club President',       name: 'Andy Hank', image: './WGA/HX_Team/andy.png'      },
-  { role: 'Vice President',   name: 'Vivian Nguyen',     image: './WGA/HX_Team/no-pic.png'      },
+  { role: 'Vice President',   name: 'Vivian Nguyen',     image: './WGA/HX_Team/Vivian.webp'      },
   { role: 'Head of Strategic',    name: 'Jessica Low',   image: './WGA/HX_Team/jess.png'      },
   { role: 'Social Media Manager', name: 'Annelia Wong',  image: './WGA/HX_Team/AnnaWong.jpg'  },
   { role: 'IT Manager',   name: 'Nathan Limono',     image: './WGA/HX_Team/no-pic.png'      },
