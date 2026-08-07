@@ -15,7 +15,7 @@ const MEMBERS = [
   { role: 'Head of Strategic',    name: 'Jessica Low',   image: './WGA/HX_Team/jess.png'      },
   { role: 'Social Media Manager', name: 'Annelia Wong',  image: './WGA/HX_Team/AnnaWong.jpg'  },
   { role: 'IT Manager',   name: 'Nathan Limono',     image: './WGA/HX_Team/no-pic.png'      },
-  { role: 'IT Manager/Program Manager',   name: 'Faiz',     image: './WGA/HX_Team/no-pic.png'      }
+  { role: 'IT Manager/Program Manager',   name: 'Faiz Romani',     image: './WGA/HX_Team/Faiz.webp'      }
 
 ]
 
