@@ -11,6 +11,7 @@ import Team from './pages/Team'
 import Gallery from './pages/Gallery'
 import Join from './pages/Join'
 import Labs from './pages/Labs'
+import Sponsors from './pages/Sponsors'
 import './App.css'
 
 export default function App() {
@@ -37,6 +38,7 @@ export default function App() {
             <Route path="/gallery" element={<Gallery />} />
             <Route path="/join" element={<Join />} />
             <Route path="/labs" element={<Labs />} />
+            <Route path="/sponsors" element={<Sponsors />} />
           </Routes>
         </main>
         <Footer />
