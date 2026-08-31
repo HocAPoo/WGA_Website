@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/png" href="/WGA/base/Thumbnail_Logo.png" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Washington Gaming Association</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Anton+SC&family=Bowlby+One&family=Titan+One&family=Alfa+Slab+One&family=Boogaloo&family=Big+Shoulders+Display:wght@900&family=Passion+One:wght@900&family=Protest+Riot&family=Rubik+Dirt&family=Ultra&family=Plus+Jakarta+Sans:wght@400;500;600;700&family=JetBrains+Mono:wght@400;600;700&display=swap" rel="stylesheet" />
+    <script type="module" crossorigin src="/assets/index-B0r8KfBT.js"></script>
+    <link rel="stylesheet" crossorigin href="/assets/index-BwQQ_LWe.css">
+  </head>
+  <body>
+    <div id="loader">
+      <img src="/WGA/base/Logo.png" alt="WGA" />
+      <div class="loader-spinner"></div>
+    </div>
+    <style>
+      #loader {
+        position: fixed;
+        inset: 0;
+        z-index: 9999;
+        background: #fff6e8;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 28px;
+        transition: opacity 0.35s ease;
+      }
+      #loader.loader--hidden {
+        opacity: 0;
+        pointer-events: none;
+      }
+      #loader img {
+        width: 120px;
+        height: auto;
+      }
+      .loader-spinner {
+        width: 40px;
+        height: 40px;
+        border: 3px solid rgba(30, 20, 10, 0.15);
+        border-top-color: #111118;
+        border-radius: 50%;
+        animation: loader-spin 0.75s linear infinite;
+      }
+      @keyframes loader-spin {
+        to { transform: rotate(360deg); }
+      }
+    </style>
+    <div id="root"></div>
+  </body>
+</html>
