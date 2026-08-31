@@ -19,17 +19,17 @@ const STATS_PRIMARY = [
 
 const STATS_SECONDARY = [
   { n: '4,800', l: 'Social engagements' },
-  { n: '52 / 12k+', l: 'Print signs / impressions' },
-  { n: '36 / 4', l: 'Prizes over 4 giveaways' },
-  { n: '4', l: 'Onstage shoutouts · 1 per 3 hrs' },
+  { n: '52', l: 'Print signs / impressions' },
+  { n: '36', l: 'Prizes over 4 giveaways' },
+  { n: '4', l: 'Onstage shoutouts' },
 ]
 
 const BENEFITS = [
-  { tag: 'LOGO', cls: '', title: 'Website placement', body: 'Your logo on uw-wga.org and the event page — 4,800+ unique views across the campaign.' },
-  { tag: 'SOCIAL', cls: 'pink', title: 'Instagram features', body: 'Named in promo, venue-tour and recap posts — 106k impressions and 4,800 engagements last cycle.' },
+  { tag: 'LOGO', cls: '', title: 'Website placement', body: 'Your logo on uw-wga.org and the event page. 4,800+ unique views across the campaign.' },
+  { tag: 'SOCIAL', cls: 'pink', title: 'Instagram features', body: 'Named in promo, venue-tour, and recap posts. Over 106k impressions and 4,800 engagements last cycle.' },
   { tag: 'PRINT', cls: 'blue', title: 'On-campus signage', body: '52 printed pieces across campus and the venue, an estimated 12,000+ impressions.' },
-  { tag: 'STAGE', cls: 'mint', title: 'Onstage announcements', body: 'Sponsors are named from the main stage once every three hours — four callouts per event day.' },
-  { tag: 'PRIZE', cls: '', title: 'Product in the raffle', body: 'Product sponsors headline our giveaways — 36 prizes across 4 drawings, with grand-prize tiers reserved for partners.' },
+  { tag: 'STAGE', cls: 'mint', title: 'Onstage announcements', body: 'Sponsors are named from the main stage.' },
+  { tag: 'PRIZE', cls: '', title: 'Product in the raffle', body: 'Product sponsors headline our giveaways. Prizes are given away in multiple raffles, with grand-prize tiers reserved for partners.' },
   { tag: 'REPORT', cls: 'ink', title: 'Post-event report', body: 'Every sponsor receives a written report: attendance, analytics, signage counts, photos and attendee feedback.' },
 ]
 
@@ -76,7 +76,7 @@ export default function Sponsors() {
             <div className="eyebrow" style={{ marginBottom: 22 }}>Sponsor HuskyX</div>
             <h1 className="sponsors-hero-title">
               Put your brand<br />in front of<br />
-              <span style={{ color: 'var(--accent)' }}>1,600 gamers.</span>
+              <span style={{ color: 'var(--accent-3)' }}>1,600 gamers.</span>
             </h1>
             <p style={{ maxWidth: 560, fontSize: 18, lineHeight: 1.55, color: '#D8D4CB', margin: '0 0 34px' }}>
               HuskyX is the UW Gaming Association's one-day convention celebrating gaming on the
@@ -98,7 +98,6 @@ export default function Sponsors() {
             <div className="sponsors-hero-photo">
               <img src="./WGA/HuskyExpo/Cosplay Contest/image 1.jpg" alt="Cosplayers lined up for the costume contest at HuskyX" />
             </div>
-            <div className="sponsors-hero-stamp">HuskyX 2026 · Sold out</div>
           </FadeIn>
         </div>
       </section>
@@ -165,7 +164,6 @@ export default function Sponsors() {
               <div className="eyebrow eyebrow--muted">What sponsors get</div>
               <h2 className="section-title">Sponsor benefits</h2>
             </div>
-            <a href={`mailto:${CONTACT_EMAIL}`} className="btn alt">Request the deck</a>
           </FadeIn>
 
           <div className="sponsors-benefits-grid">
@@ -272,10 +270,10 @@ export default function Sponsors() {
               send you a full report afterwards. Every sponsor's contribution goes straight into a
               free event for UW students.
             </p>
-            <div className="sponsors-cta-links mono">
+            {/* <div className="sponsors-cta-links mono">
               <a href="https://instagram.com/wgauw" target="_blank" rel="noopener noreferrer">instagram.com/wgauw</a>
               <a href="https://discord.gg/jkfpCJXW4V" target="_blank" rel="noopener noreferrer">discord.gg/jkfpCJXW4V</a>
-            </div>
+            </div> */}
           </FadeIn>
 
           <FadeIn as="div" className="sponsors-cta-panel">
@@ -285,7 +283,10 @@ export default function Sponsors() {
               Tell us your budget or product, your goals, and the timeline. We'll come back with a
               tier and a mockup of where you'd appear.
             </p>
-            <a href={`mailto:${CONTACT_EMAIL}`} className="btn spark">Email the sponsorship lead</a>
+            <a href={`mailto:${CONTACT_EMAIL}`} className="btn spark">
+              <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true"><rect x="2" y="4" width="20" height="16" rx="2"/><polyline points="2,4 12,13 22,4"/></svg>
+              Email the sponsorship lead
+            </a>
           </FadeIn>
         </div>
       </section>
