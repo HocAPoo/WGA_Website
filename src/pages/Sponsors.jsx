@@ -250,9 +250,6 @@ export default function Sponsors() {
                 </FadeIn>
               ))}
             </div>
-            <div className="mono sponsors-testimonials-footnote">
-              Drop in real sponsor marks from the site's sponsor asset folder
-            </div>
           </div>
         </section>
       )}
