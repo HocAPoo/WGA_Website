@@ -263,8 +263,8 @@ export default function Sponsors() {
               <span style={{ color: 'var(--accent-3)' }}>together.</span>
             </h2>
             <p style={{ maxWidth: 520, fontSize: 17, lineHeight: 1.6, color: '#D8D4CB', margin: '0 0 26px' }}>
-              Cash, product or in-kind — we'll shape a package around what you want out of it, then
-              send you a full report afterwards. Every sponsor's contribution goes straight into a
+              Cash or product, we accept all contributions and will use them to the fullest. Transparency is our motto, we will
+              always send you a full report after all sponsored events. Every sponsor's contribution goes straight into a
               free event for UW students.
             </p>
             {/* <div className="sponsors-cta-links mono">
