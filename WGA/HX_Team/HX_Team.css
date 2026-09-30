@@ -1,0 +1,81 @@
+/*Body1-------------------------------------------------------------------------*/
+
+.team-header {
+    margin-top: 150px;
+    margin-bottom: 20px;
+    text-align: center;
+    font-size: 32px;
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding: 20px;
+    max-width: 1500px; 
+    height:auto;
+    margin: 0 auto; 
+    transition: all 0.5s ease;
+}
+
+.top {
+    height: 15%; 
+    border-top-left-radius: 15px; /* Top-left corner */
+    border-top-right-radius: 15px; /* Top-right corner */
+    background-color: rgb(173, 112, 227); 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0; 
+}
+
+.middle {
+    height: 466px; 
+    background-color: #3498db; 
+}
+
+.bottom {
+    height: 10%;    
+    background-color: rgba(49, 27, 100, 0.596); 
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    border-bottom-left-radius: 15px; /* Top-left corner */
+    border-bottom-right-radius: 15px; /* Top-right corner */
+    padding: 0; 
+}
+
+.column {
+    width: 350px; 
+    height: 590px;
+    
+    margin: 40px 5px 40px 5px;
+    
+}
+
+img{
+    height: auto;
+    width: 350px;
+}
+
+/*footer-------------------------------------------------------------------------*/
+footer{
+    text-align: center;
+    font-size: 17px;
+    padding: 30px;
+    background-color: rgb(53, 12, 88);
+    font-family: 'Courier New', Courier, monospace;
+}
+footer p{
+    color: white;
+}
+footer a{
+    color: rgb(198,159,197);
+}
+footer .projectIF img{
+    height: 100px;
+    width:auto;
+    text-align: center;
+}
+
+/*website scaling-------------------------------------------------------------------------*/
